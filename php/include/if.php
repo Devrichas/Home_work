@@ -8,7 +8,7 @@ $idadeMelhor = 65;
 
 if ($qualASuaidade < $idadeCriança) {
 
-	echo "Crança"
+	echo "Crança";
 
 }
 
