@@ -10,8 +10,6 @@ fn dobro(num1: i32) -> i32 {
     return num1.shl(1);
 }
 
-fn 
-
 fn main() {
     let mut number1 = String::new();
     print!("Digite um numero: ");
