@@ -1,17 +1,23 @@
-fn count(num: i32) {
-    for i in 1..=num{
-        println!("Current number: {}", i);
-    }
-}
+fn primo(num: i32) -> bool {
+    
+    let limite = (num as f64).sqrt() as i32 + 1;
 
-fn count_down(mut num:i32){
-    while num > 0 {
-        println!("Current number: {}", num);
-        num -= 1;
+    if num <= 1{
+        return false;
     }
+
+    for i in 2..limite{
+        if num % i == 0{
+            return false;
+        }
+    }
+
+    return true;
+
 }
 
 fn main() {
-    count(10);
-    count_down(10);
+    let numero = 28;
+    let resultado = primo(numero);
+    println!("O número {} é primo? {}", numero, resultado);
 }
