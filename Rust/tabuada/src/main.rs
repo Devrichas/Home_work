@@ -4,7 +4,6 @@ fn tabuada(num: i32){
     }
 }
 
-
 fn main(){
     tabuada(7);
 }
