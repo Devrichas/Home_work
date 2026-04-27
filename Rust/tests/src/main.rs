@@ -1,23 +1,11 @@
-fn primo(num: i32) -> bool {
-    
-    let limite = (num as f64).sqrt() as i32 + 1;
-
-    if num <= 1{
-        return false;
-    }
-
-    for i in 2..limite{
-        if num % i == 0{
-            return false;
-        }
-    }
-
-    return true;
-
+fn media(vector: Vec<f64>) -> f64 {
+    let sum: f64 = vector.iter().sum();
+    let count = vector.len() as f64;
+    return sum / count
 }
 
-fn main() {
-    let numero = 28;
-    let resultado = primo(numero);
-    println!("O número {} é primo? {}", numero, resultado);
+fn main(){
+    let numbers = vec![1.0, 2.0, 3.0, 4.0, 5.0];
+    let result = media(numbers);
+    println!("A média é: {}", result);
 }
